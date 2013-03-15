@@ -5,9 +5,10 @@ import org.bukkit.block.Sign;
 import org.bukkit.entity.Player;
 
 public class FCommand implements FSign {
+
     @Override
     public void onActivate(Player p, Sign s) {
-        String cmd = s.getLines()[1]+s.getLines()[2]+s.getLines()[3];
+        String cmd = s.getLines()[1] + s.getLines()[2] + s.getLines()[3];
         p.performCommand(cmd);
     }
 
@@ -15,5 +16,4 @@ public class FCommand implements FSign {
     public String getName() {
         return "FCommand";
     }
-    
 }
