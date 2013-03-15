@@ -2,6 +2,7 @@ package me.delocaz.featsigns;
 
 import com.google.common.collect.Lists;
 import java.util.List;
+import me.delocaz.featsigns.fsigns.FClearMobs;
 import me.delocaz.featsigns.fsigns.FCommand;
 import me.delocaz.featsigns.fsigns.FDay;
 import me.delocaz.featsigns.fsigns.FNight;
@@ -21,6 +22,7 @@ public class FSRegistrator {
         l.add(new FStorm());
         l.add(new FDay());
         l.add(new FNight());
+        l.add(new FClearMobs());
         return l;
     }
 }
