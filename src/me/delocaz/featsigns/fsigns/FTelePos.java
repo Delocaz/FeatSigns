@@ -10,7 +10,7 @@ public class FTelePos implements FSign {
     @Override
     public void onActivate(Player p, Sign s) {
         String[] coords = s.getLines()[1].split(",");
-        if (coords.length > 3) {
+        if (coords.length > 2) {
             Location l;
             try {
                 l = new Location(s.getWorld(), Double.parseDouble(coords[0]), Double.parseDouble(coords[1]), Double.parseDouble(coords[2]));
